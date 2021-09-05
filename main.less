@@ -123,12 +123,19 @@ header {
 
 .middle-section {
     .mobile-middle-section ();
-    h2 {
-        .heading();
-        span {
-            .span();
+    div {
+        padding: 60px 0;
+        h2 {
+            .heading();
+            span {
+                .span-red();
+            }
         }
+        p {
+            .paragraph();
+        }  
     }
+
     img {
         max-width: 232px;
         width: 50%;
@@ -141,15 +148,26 @@ header {
 
 .bottom-section {
     .mobile-bottom-section ();
-    h2 {
-        .heading();
-        span {
-            .span();
+    div {
+        padding: 60px 0;
+        h2 {
+            .heading();
+            span:first-of-type {
+                text-transform: lowercase;
+            }
+            span:last-of-type {
+                .span-red();
+            }
         }
+        p {
+            .paragraph();
+        } 
     }
+
     img {
         max-width: 176px;
         width: 50%;
+        padding-bottom: 40px;
     }
     padding: 0 15px;
     button {
