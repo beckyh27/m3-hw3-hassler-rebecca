@@ -103,9 +103,31 @@ header {
 
 /**************************************** HAMBURGER MENU STYLES *****************************************/
 
-section:first-of-type {
+.top-section {
     .hero-img();
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 50%;
+        max-width: 449px;
+        padding-bottom: 10px;
+    }
+    .order-button {
+        background-color: @yellow;
+        color: @black-text-color;
+        border: none;
+        border-radius: 5px;
+        width: 170px;
+        height: 50px;
+        text-transform: uppercase;
+        font-family: @font-family;
+        font-weight: @link-font-weight;
+        font-size: @link-font-size;
+    }
 }
 
 
@@ -119,7 +141,7 @@ section:first-of-type {
         display: flex;
         align-items: center;
         height: 80px;
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     .desktop-menu {
