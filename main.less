@@ -182,7 +182,7 @@ header {
 footer {
     div:first-of-type {
         background-color: @yellow;
-        height: 5px;
+        height: 8px;
         width: 100%;
     }
 
@@ -269,10 +269,26 @@ footer {
 @media (min-width: 992px) {
     header {
         height: 120px;
-        padding-left: 60px;
+        padding-left: 120px;
+
+        .desktop-menu ul li a {
+            padding-right: 40px;
+        }
     }
-    .desktop-menu ul li a {
-        padding-right: 40px;
+
+    .middle-section {
+        padding: 60px 100px;
+        div {
+            padding-right: 60px;
+        }
     }
+
+    .bottom-section {
+        padding: 60px 100px;
+        div {
+            padding-left: 60px;
+        }
+    }
+    
 }
 /************************************* END 992PX MEDIA QUERY *************************************/
