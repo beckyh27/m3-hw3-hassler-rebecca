@@ -175,10 +175,22 @@ header {
     }
 }
 
+
+
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    div:first-of-type {
+        background-color: @yellow;
+        height: 5px;
+        width: 100%;
+    }
+    
+    div:last-of-type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: @black;
+        height: 130px;
+    }
 
     img {
         max-width: 449px;
