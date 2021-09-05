@@ -4,13 +4,6 @@
     margin: 0;
   }
 
-// .hero-img {
-//     background-image: url("./img/banner-bg.png");
-//     // background-position: center; /* Center the image */
-//     // background-repeat: no-repeat; /* Do not repeat the image */
-//     background-size: cover; /* Resize the background image to cover the entire container */
-// }
-
 .hero-img {
     background-image: 
       linear-gradient(
@@ -26,4 +19,23 @@
 .emphasized-text {
     text-transform: uppercase;
     color: @red;
+}
+
+.mobile-middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-bottom-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-middle-section {
+    display: flex;
+    flex-direction: row;
 }
