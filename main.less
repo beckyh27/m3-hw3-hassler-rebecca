@@ -100,7 +100,7 @@ html, body {
                 text-decoration: none;
                 margin: 0;
                 color: @black-text-color;
-                font-size: 18px;
+                font-size: @link-font-size;
                 text-decoration: none;
                 color: @black-text-color;
             }
@@ -149,7 +149,7 @@ html, body {
         h2 {
             .heading();
             span {
-                .span-red();
+                .emphasized-text();
             }
         }
         p {
@@ -180,7 +180,7 @@ html, body {
                 text-transform: lowercase;
             }
             span:last-of-type {
-                .span-red();
+                .emphasized-text();
             }
         }
         p {
@@ -249,7 +249,7 @@ footer {
                         text-decoration: none;
                         padding-right: 15px;
                         color: @black-text-color;
-                        font-size: 18px;
+                        font-size: @link-font-size;
                     }
     
                     .order-now-nav {
