@@ -72,10 +72,9 @@ html, body {
   
 .menu {
     z-index: 1000000;
-    font-weight: bold;
     font-size: 0.8em;
     width: 100%;
-    background: @yellow;
+    background: @white;
     position: absolute;
     text-align: center;
     font-size: 12px;
@@ -92,38 +91,34 @@ html, body {
             padding: 15px 0 15px 0;
             border-bottom: @black-text-color 1px solid;
 
+            .order-now-nav {
+                .emphasized-text();
+            } 
+
             a {
+                font-family: @font-family;
                 text-decoration: none;
                 margin: 0;
                 color: @black-text-color;
-            }
-        
-            a:hover {
-                color: @red;
-                text-decoration: none;
-            }
-            
-            a {
+                font-size: 18px;
                 text-decoration: none;
                 color: @black-text-color;
             }
         
             a:hover {
-                text-decoration: none;
                 color: @red;
-            } 
+                text-decoration: none;
+            }
         }
         
         li:hover {
             display: block;
-            background: @white;
+            background: @yellow;
             padding: 15px 0 15px 0;
             border-bottom: @black-text-color 1px solid;
-        }
-        
+        }       
     }
-
-   
+ 
 }
 
 /**************************************** HAMBURGER MENU STYLES *****************************************/
