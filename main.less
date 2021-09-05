@@ -211,34 +211,60 @@ footer {
         display: flex;
         align-items: center;
         height: 80px;
-        padding-left: 10px;
-    }
+        padding-left: 20px;
 
-    .desktop-menu {
-        display: block;
-        align-items: center;
-
-        ul {
-            margin-bottom: 0;
-
-            li {
-                display: inline;
-                
-                a {
-                    text-decoration: none;
-                    padding-right: 15px;
-                    color: @black-text-color;
-                    font-size: 18px;
+        .desktop-menu {
+            display: block;
+            align-items: center;
+    
+            ul {
+                margin-bottom: 0;
+                padding-left: 0;
+    
+                li {
+                    display: inline;
+                    
+                    a {
+                        text-decoration: none;
+                        padding-right: 15px;
+                        color: @black-text-color;
+                        font-size: 18px;
+                    }
+    
+                    .order-now-nav {
+                        .emphasized-text();
+                    }    
                 }
-
-                .order-now-nav {
-                    .emphasized-text();
-                }    
             }
         }
     }
+
+    .middle-section,
+    .bottom-section {
+        padding: 0 20px;
+    }
+    
 }
 /************************************* END 576PX MEDIA QUERY *************************************/
+/************************************* START 768PX MEDIA QUERY *************************************/
+@media (min-width: 768px) {
+    .bottom-section,
+    .middle-section {
+        .desktop-section();
+        padding: 60px 40px;
+        img {
+            padding: 0 20px;
+        }
+        div {
+            padding: 0 20px;
+        }
+    }
+
+    header {
+        padding-left: 60px;
+    }
+}
+/************************************* END 768PX MEDIA QUERY *************************************/
 /************************************* START 992PX MEDIA QUERY *************************************/
 @media (min-width: 992px) {
     header {
