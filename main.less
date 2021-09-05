@@ -4,6 +4,7 @@
 html, body {
     #reset();
     font-family: 'Roboto', sans-serif;
+    background-color: @black;
 }
 
 .desktop-menu {
@@ -79,41 +80,44 @@ html, body {
         padding: 0;
         list-style-type: none;
         list-style-image: none;
+
+        li {
+            display: block;
+            padding: 15px 0 15px 0;
+            border-bottom: @black-text-color 1px solid;
+
+            a {
+                text-decoration: none;
+                margin: 0;
+                color: @black-text-color;
+            }
+        
+            a:hover {
+                color: @red;
+                text-decoration: none;
+            }
+            
+            a {
+                text-decoration: none;
+                color: @black-text-color;
+            }
+        
+            a:hover {
+                text-decoration: none;
+                color: @red;
+            } 
+        }
+        
+        li:hover {
+            display: block;
+            background: @white;
+            padding: 15px 0 15px 0;
+            border-bottom: @black-text-color 1px solid;
+        }
+        
     }
 
-    li {
-        display: block;
-        padding: 15px 0 15px 0;
-        border-bottom: @black-text-color 1px solid;
-    }
-    
-    li:hover {
-        display: block;
-        background: @white;
-        padding: 15px 0 15px 0;
-        border-bottom: @black-text-color 1px solid;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        margin: 0;
-        color: @black-text-color;
-    }
-
-    ul li a:hover {
-        color: @red;
-        text-decoration: none;
-    }
-    
-    a {
-        text-decoration: none;
-        color: @black-text-color;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: @red;
-    }    
+   
 }
 
 /**************************************** HAMBURGER MENU STYLES *****************************************/
@@ -156,6 +160,7 @@ html, body {
         width: 50%;
         padding-bottom: 60px;
     }
+    background-color: @white;
     padding: 0 15px;
     button {
         .button();
@@ -304,5 +309,10 @@ footer {
         }
     }
     
+    .container {
+        max-width: 1400px;
+        margin: auto;
+        padding: 0;
+    }
 }
 /************************************* END 992PX MEDIA QUERY *************************************/
